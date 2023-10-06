@@ -1,0 +1,116 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  background-image: linear-gradient(0deg, #0017FF30, #ff009630);
+}
+
+.star {
+  position: absolute;
+  border-radius: 100%;
+  background-color: white;
+  opacity: 0;
+}
+
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: auto;
+}
+
+* {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+.item {
+  opacity: 0.6;
+  width: 70%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  transition: width 0.5s, height 0.5s, opacity 0.5s;
+}
+
+.itemBody {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+  height: 60%;
+  /* Set the initial height to 60% of the screen size */
+  overflow: hidden;
+  /* Hide any content that overflows */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin-top: 2vh;
+}
+
+a {
+  margin: 0.76em;
+}
+
+.expanded {
+  width: 70%;
+  height: 50%;
+  opacity: 1;
+}
+
+.itemBodyVisible {
+  display: block;
+  opacity: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Adjust the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 6px;
+  /* Adjust the border-radius to match the thumb */
+  margin: 8px 0;
+  /* Adjust the top and bottom margin to make the track shorter */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff22;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4297bc;
+  cursor: pointer;
+}
