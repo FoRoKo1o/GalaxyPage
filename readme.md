@@ -1,4 +1,4 @@
-# FoRoKo Project 
+# FoRoKo Project
 
 Welcome to the FoRoKo project! This project consists of a webpage with various components, including a starry background, comets animation, and interactive items. Below, you'll find an overview of the project structure and a brief description of each component.
 
